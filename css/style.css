@@ -372,6 +372,9 @@ header.sticky .m-nav ul li a{
     font-size: 20px;
     transition: all .3s
 }
+header.sticky .m-nav ul li a.m-btn {
+    width: 197px;
+}
 header .m-nav ul li:not(:last-of-type):after{
     position: absolute;
     content: '';
@@ -823,7 +826,7 @@ footer .bottom-footer .links li:not(:last-child){
 }
 footer .bottom-footer .links li a{
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-family: neo-reg
 }
 footer .bottom-footer .links li a:hover{
@@ -832,11 +835,11 @@ footer .bottom-footer .links li a:hover{
 footer .bottom-footer .cpy{
     font-size: 20px;
     font-family: neo-reg;
-    color: #fff
+    color: #fff;
+    padding-top: 6px
 }
 footer .bottom-footer .socials li a{
-    color: #fff;
-    font-size: 20px
+
 }
 footer .bottom-footer .socials li:not(:last-child){
     margin-left: 20px;
@@ -845,13 +848,15 @@ footer .bottom-footer .socials{
     text-align: left
 }
 footer .bottom-footer .socials a{
-    width: 40px;
-    height: 40px;
-    line-height: 37px;
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
     background: transparent;
     border-radius: 50%;
     text-align: center;
-    transition: all .3s
+    transition: all .3s;
+    color: #fff;
+    font-size: 15px
 
 }
 footer .bottom-footer .socials li:hover a{
