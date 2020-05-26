@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tubaa-Home</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/logo.png">
+    <!--Bootstrap Minified-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+
+    <!--FontAwesome Styles-->
+    <link rel="stylesheet" href="css/all.css">
+    <!--Animate.css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--Scroll-->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Main Style-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Media Style-->
+    <link rel="stylesheet" href="css/media.css">
+    <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="preload">
+    <!--Start Preloader Section-->
+    <div class="screen">
+        <div class="loader">
+            <!--Preloader HTML-->
+        </div>
+    </div>
+    <!--End Preloader Section-->
+    <div class="wrapper">
+        <!--Login Modal-->
+
+        <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo text-center">
+                            <img src="imgs/logo.png" alt="">
+                        </div>
+                        <h4 class="text-center">تسجيل الدخول</h4>
+                        <form action="">
+                            <input type="text" placeholder="البريد الالكتروني او رقم الجوال">
+                            <input type="password" placeholder="كلمة المرور">
+                            <div class="forget-pass">
+                                <a href="forget-pass.html">نسيت كلمة المرور؟</a>
+                            </div>
+                            <a href="#" id="logIn" class="m-btn w-100">
+                                تسجيل الدخول
+                            </a>
+                            <div class="or"><bdi>-أو-</bdi></div>
+                            <a href="" class="google-sign">تسجيل دخول عبر جوجل
+                                <img src="imgs/google-color.png" alt="">
+                            </a>
+                            <div class="dont-have-acc">
+                                <bdi>ليس لديك حساب؟</bdi>
+                                <span><a href="register.html">تسجيل</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/Login Modal-->
+
+        <!--Start Header Section-->
+        <header class="overlay-header" id="myHeader">
+            <div class="custom-container">
+                <div class="d-flex-sb">
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                    </div>
+                    <div class="m-nav m-auto-0 screen-nav">
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about-us.html">عن طوبى</a></li>
+                            <li><a href="our-store.html">متاجرنا</a></li>
+                            <li><a href="contact-us.html">تواصل معنا</a></li>
+
+                            <li class="my-acc has-child logged-only d-none">
+                                <a href="#">حسابي</a>
+                                <!--
+                            <ul>
+                                <li><a href="#">تسجيل خروج</a></li>
+                            </ul>
+-->
+                            </li>
+                            <li class="cart logged-only d-none">
+                                <a href="#">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="badge">0</span>
+                                </a>
+                            </li>
+                            <li class="login"><a class='m-btn ' href="#" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-nav d-none">
+
+
+                        <div class="cart logged-only d-none ">
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge">0</span>
+                            </a>
+                        </div>
+                        <div class="btnNav">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about-us.html">عن طوبى</a></li>
+                            <li><a href="our-store.html">متاجرنا</a></li>
+                            <li><a href="contact-us.html">تواصل معنا</a></li>
+                            <li class="my-acc logged-only d-none"><a href="#">حسابي</a></li>
+                            <li class="login-btn"><a class="login" href="#" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Hero Section-->
+        <section class="hero">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="custom-container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text">
+                                        <h1>لحظة سعادة تهديها لمن تحب
+                                            <span><img src="imgs/heart.png" alt=""></span>
+                                        </h1>
+                                        <p>
+                                            تواجهنا حيرة عنما نحاول اختيار هدية في مختلف المناسبات، وكثير من الأشخاص يتلقون هدايا مكررة او لا يحبونها بشكل خاص لذا فإن مصيرها الإهمال او البيع بأقل من قيمتها، وإحدى الطرق لمنع هذه الخسارة هو تقديم مبلغ نقدي كهدية ولكن في كثير من الأحيان لا يعد ذلك أمرا مناسبا لذا أسلوب منصة طوبى يعد بديلا فعالا
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="left-img">
+                                        <img src="imgs/hero-gold.png" alt="">
+                                        <img src="imgs/confetti.gif" alt="" class="gif">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text">
+                                        <h1>لحظة سعادة تهديها لمن تحب
+                                            <span><img src="imgs/heart.png" alt=""></span>
+                                        </h1>
+                                        <p>
+                                            تواجهنا حيرة عنما نحاول اختيار هدية في مختلف المناسبات، وكثير من الأشخاص يتلقون هدايا مكررة او لا يحبونها بشكل خاص لذا فإن مصيرها الإهمال او البيع بأقل من قيمتها، وإحدى الطرق لمنع هذه الخسارة هو تقديم مبلغ نقدي كهدية ولكن في كثير من الأحيان لا يعد ذلك أمرا مناسبا لذا أسلوب منصة طوبى يعد بديلا فعالا
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="left-img">
+                                        <img src="imgs/hero-gold.png" alt="">
+                                        <img src="imgs/confetti.gif" alt="" class="gif">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text">
+                                        <h1>لحظة سعادة تهديها لمن تحب
+                                            <span><img src="imgs/heart.png" alt=""></span>
+                                        </h1>
+                                        <p>
+                                            تواجهنا حيرة عنما نحاول اختيار هدية في مختلف المناسبات، وكثير من الأشخاص يتلقون هدايا مكررة او لا يحبونها بشكل خاص لذا فإن مصيرها الإهمال او البيع بأقل من قيمتها، وإحدى الطرق لمنع هذه الخسارة هو تقديم مبلغ نقدي كهدية ولكن في كثير من الأحيان لا يعد ذلك أمرا مناسبا لذا أسلوب منصة طوبى يعد بديلا فعالا
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="left-img">
+                                        <img src="imgs/hero-gold.png" alt="">
+                                        <img src="imgs/confetti.gif" alt="" class="gif">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End Hero Section-->
+
+        <!--Start Our Stores Section-->
+        <section class="our-stores s-padding">
+            <div class="custom-container">
+                <div class="section-title">
+                    <h2>متاجرنا</h2>
+                </div>
+                <div class="stores ">
+                    <div class="row">
+                        <div class="col">
+                            <span><img src="imgs/jumia.png" alt=""></span>
+                        </div>
+                        <div class="col">
+                            <span><img src="imgs/souq.png" alt=""></span>
+                        </div>
+                        <div class="col">
+                            <span><img src="imgs/carrefour.png" alt=""></span>
+                        </div>
+                        <div class="col">
+                            <span><img src="imgs/jarir.png" alt=""></span>
+                        </div>
+                        <div class="col">
+                            <span><img src="imgs/noon.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="m-btn m-auto ">المزيد</a>
+            </div>
+        </section>
+        <!--End Our Stores Section-->
+
+        <!--Start Vouchers Section-->
+        <section class="vouchers s-padding">
+            <div class="custom-container">
+            <div class="section-title">
+                <h2>قسائم شراء متنوعة</h2>
+            </div>
+                <div class="slider">
+                    <div class="owl-carousel owl-theme voucher-carousel">
+                        <div class="item default-voucher">
+                            <div class="comp-logo">
+                                <img src="imgs/jumia.png" alt="">
+                            </div>
+                            <div class="price">
+                                <h4>1000 ريال</h4>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#">
+                                    <i class="fas fa-cart-plus"></i>
+                                    اضف الى العربة
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item default-voucher">
+                            <div class="comp-logo">
+                                <img src="imgs/carrefour.png" alt="">
+                            </div>
+                            <div class="price">
+                                <h4>1000 ريال</h4>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#">
+                                    <i class="fas fa-cart-plus"></i>
+                                    اضف الى العربة
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item default-voucher">
+                            <div class="comp-logo">
+                                <img src="imgs/jarir.png" alt="">
+                            </div>
+                            <div class="price">
+                                <h4>1000 ريال</h4>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#">
+                                    <i class="fas fa-cart-plus"></i>
+                                    اضف الى العربة
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item default-voucher">
+                            <div class="comp-logo">
+                                <img src="imgs/noon.png" alt="">
+                            </div>
+                            <div class="price">
+                                <h4>1000 ريال</h4>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#">
+                                    <i class="fas fa-cart-plus"></i>
+                                    اضف الى العربة
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item default-voucher">
+                            <div class="comp-logo">
+                                <img src="imgs/souq.png" alt="">
+                            </div>
+                            <div class="price">
+                                <h4>1000 ريال</h4>
+                            </div>
+                            <div class="add-to-cart">
+                                <a href="#">
+                                    <i class="fas fa-cart-plus"></i>
+                                    اضف الى العربة
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Vouchers Section-->
+
+        <!--Start Footer Section-->
+        <footer>
+
+            <div class="top-footer">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="logo">
+                                <img src="imgs/footer-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 qr-cont">
+                            <div class="qr">
+                                <img src="imgs/qr.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 m-auto">
+                            <div class="info">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-phone"></i></span>
+                                        <a href="#">123456789</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-envelope"></i></span>
+                                        <a href="#">info@tubaa.net</a>
+                                    </li>
+                                </ul>
+                                <div class="news">
+                                    <form action="#">
+                                        <label for="email">اعرف جديدنا</label>
+                                        <div class="inp">
+                                            <input type="email" id="email" placeholder="ادخل بريدك الالكتروني">
+                                            <button><img src="imgs/send.png" alt=""></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="bottom-footer">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <ul class="links">
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li><a href="about-us.html">عن طوبى</a></li>
+                                <li><a href="our-store.html">متاجرنا</a></li>
+                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="cpy">
+                                &copy; جميع الحقوق محفوظه 2020
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <ul class="socials">
+                                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </footer>
+        <!--End Footer Section-->
+
+
+    </div>
+
+    <!--Jquery Minified JS-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!--Owl Carousel JS-->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <!--Bootstrap Minified JS-->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--ScrollBar-->
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--Main Script-->
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
