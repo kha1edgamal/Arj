@@ -17,6 +17,9 @@ body {
     font-family: neo-med;
 
 }
+input:focus{
+    outline: 0
+}
 
 html,
 body,
@@ -210,6 +213,13 @@ select {
 .s-padding{
     padding: 150px 0
 }
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+}
 .custom-container{
     padding-left: 100px;
     padding-right: 100px;
@@ -361,7 +371,8 @@ header.sticky{
     box-shadow: 0 2px 10px #0000000d;
     position: fixed;
     width: 100%;
-    z-index: 9999
+    z-index: 9999;
+    left: 0
 }
 header.sticky .logo{
     width: 100px !important;
@@ -1090,6 +1101,12 @@ border-radius: 36px;
 
 
 /*Start Register style*/
+.register-pg header{
+    border-bottom: 1px solid #eee
+}
+.register-pg header.sticky{
+    border-bottom: 0
+}
 .register-sec{
     background-image: url(../imgs/register-bg.png);
     background-repeat: no-repeat;
@@ -1125,3 +1142,169 @@ border-radius: 36px;
     text-align: left
 }
 /*End Register style*/
+/*Start profile style*/
+.profile-pg .profile-content{
+    padding-bottom: 100px;
+     background: #FAFAFA;
+}
+.profile-pg .tabs-header{
+        padding-top:5px;
+    border-top: 1px solid #eee;
+    background: #fff
+}
+.nav-tabs .nav-link.active {
+    border-color: transparent;
+    color: #9D2125;
+    border-bottom: 2px solid #9d2325;
+}
+.nav-tabs .nav-link{
+    margin-left: 30px;
+    color: #D1D1D1
+}
+.profile-pg .profile-content .tab-pane {
+    padding: 50px 0
+}
+.profile-pg form .add-photo .img-container{
+    width: 200px;
+    height: 200px;
+    background: #BABABA;
+    margin-bottom: 20px;
+    border-radius: 100%
+}
+.profile-pg form .add-photo .img-container #imagePreview{
+    background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%
+}
+.profile-pg form .inp-photo input{
+    display: none
+}
+.profile-pg form .details-col input{
+    margin-bottom: 30px;
+        background: #fff;
+    border-radius: 39px;
+    padding-right: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border: none;
+    display: block;
+    color: #292830;
+    transition: all .3s
+}
+
+.profile-pg form .inp-photo label{
+    color: #9D2125;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 200px
+}
+.profile-pg form .inp-photo label:hover{
+    text-decoration: underline
+}
+.profile-pg .tabs-body{
+
+}
+.profile-pg  form .details-col input:disabled{
+    border: none;
+    background: none;
+    padding: 0
+}
+.profile-pg  form .details-col input[type="text"]:disabled{
+    font-size: 30px;
+    color: #292830;
+
+
+}
+.profile-pg  form .details-col label{
+    color: #BABABA;
+    font-family: neo-reg;
+    margin-left: 60px;
+        font-size: 18px;
+    vertical-align: baseline
+
+}
+.profile-pg  form .details-col input[type='email']{
+    color: #BABABA;
+    font-family: neo-reg;
+    font-size: 18px;
+    display: inline-block
+}
+.profile-pg  form .details-col .logout{
+    margin-top: 30px;
+    background: #fff;
+    color: #9D2125 !important;
+    border-color: #9D2125;
+    margin-bottom: 50px
+
+}
+.profile-pg  form .details-col .logout i{
+    padding-left: 10px
+}
+.profile-pg  form .details-col .logout:hover{
+    opacity: .7;
+    transition: all .3s
+}
+.profile-pg  .cards h3{
+    margin-bottom: 40px;
+}
+.profile-pg  .cards .single-card{
+    width: 400px;
+    border-radius: 19px;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 1px 6px #00000029;
+}
+.profile-pg  .cards .card-type{
+    width: 60px;
+    height: 40px
+}
+.profile-pg  .cards .card-type img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.profile-pg .single-card .delet-card{
+    color: #9D2125
+}
+.profile-pg .single-card .delet-card:hover{
+    text-decoration: underline
+}
+.profile-pg .single-card .card-number{
+    font-size: 30px;
+    margin-top: 30px
+}
+.profile-pg   .add-new-card{
+    color: #9D2125;
+    font-size: 25px;
+    margin-top: 30px;
+    display: inline-block
+}
+.profile-pg   .add-new-card:hover{
+    text-decoration: underline
+}
+.profile-pg .line{
+    width: 2px;
+    height: 100%;
+    background: #D1D1D1;
+    margin: auto;
+}
+.profile-pg .profile-content .default-voucher{
+    width: 600px;
+}
+.profile-pg .profile-content .default-voucher .d-flex-sb{
+    padding:30px;
+}
+.profile-pg .profile-content .default-voucher .d-flex-sb a{
+    color: #9D2125;
+    cursor: pointer;
+    position: relative;
+    z-index: 5
+}
+.profile-pg .profile-content .default-voucher .d-flex-sb a:hover{
+    text-decoration: underline
+}
+/*End profile style*/

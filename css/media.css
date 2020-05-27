@@ -26,6 +26,16 @@
     }
 }
 @media(max-width:991px){
+    .profile-pg form .details-col input[type="text"]:disabled{
+        margin-top: 30px;
+        margin-bottom: 10px
+    }
+    .profile-pg .profile-content{
+        margin-bottom: 100px
+    }
+    .profile-pg .line{
+        display: none
+    }
     .register-sec .background-sec{
         display: none
     }
@@ -191,6 +201,9 @@ font-size: 30px}
     }
 }/*991*/
 @media(max-width:768px){
+    .profile-pg .profile-content .default-voucher{
+        width: 100%
+    }
     .single-store-pg .store-body .m-btn{
         width: 100%
 
@@ -252,6 +265,18 @@ font-size: 30px}
     }
 }/*520*/
 @media(max-width:425px){
+    .profile-pg .profile-content .default-voucher .d-flex-sb{
+        padding: 20px;
+    }
+    .profile-pg .profile-content .default-voucher .d-flex-sb h5{
+        font-size: 13px
+    }
+    .profile-pg .profile-content .default-voucher .d-flex-sb a{
+        font-size: 10px
+    }
+    .profile-pg .cards .single-card{
+        width: 100%
+    }
     .login-modal .m-btn,
      .google-sign{
         height: 60px;

@@ -1,4 +1,23 @@
 $(document).ready(function () {
+    //Edit Btn
+    $('#editBtn').click(function(){
+        $(this).siblings('input').removeAttr('disabled');
+    })
+    //image upload
+    function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+    }
+$("#imageUpload").change(function() {
+    readURL(this);
+});
     //if logged in
     $("#logIn").click(function(){
     $("header").addClass("logged-in");
