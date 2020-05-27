@@ -131,6 +131,17 @@ main {
 }
 
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 ul {
     list-style: none;
@@ -219,6 +230,9 @@ select {
 
 
 }
+.m-btn:focus{
+    outline: none
+}
 .m-btn:hover{
     background: transparent;
     color: #9D2125 !important;
@@ -229,7 +243,7 @@ select {
 }
 .section-title h2{
     position: relative;
-    font-size: 45px;
+    font-size: 35px;
     color: #292830;
     padding: 20px 0;
     display: inline-block
@@ -452,7 +466,7 @@ header .logo img{
     margin-top: 10px;
     margin-bottom: 30px
 }
-.login-modal .or{
+ .or{
     font-family: neo-reg;
     font-size: 25px;
     color: #292830;
@@ -460,7 +474,7 @@ header .logo img{
     text-align: center
 
 }
-.login-modal .google-sign{
+ .google-sign{
     width: 100%;
     border-radius: 39px;
     box-shadow: 0px 1px 10px #00000029;
@@ -472,13 +486,13 @@ header .logo img{
         transition: all .3s
 
 }
-.login-modal .google-sign img{
+ .google-sign img{
     position: absolute;
     left: 40px;
     top: 20px
 
 }
-.login-modal .google-sign:hover{
+ .google-sign:hover{
     box-shadow: 0px 1px 10px #9d2125;
     transition: all .3s
 }
@@ -1073,3 +1087,41 @@ border-radius: 36px;
     padding-right: 20px
 }
 /*End Single Store Style*/
+
+
+/*Start Register style*/
+.register-sec{
+    background-image: url(../imgs/register-bg.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: left;
+    margin-bottom: 80px
+}
+.register-sec .section-title{
+    margin-bottom: 50px
+}
+.register-sec form input{
+    width: 100%;
+    background: #F1F1F1;
+    border: 1px solid transparent;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 39px;
+    padding-right: 50px
+}
+.register-sec form input:not(:last-of-type){
+    margin-bottom: 30px
+}
+.register-sec form input:last-of-type{
+    margin-bottom: 60px
+}
+.register-sec form input:focus{
+    outline: 0;
+    background: #fff;
+    border-color: #9D2125;
+    transition: all .3s
+}
+.register-sec .background-sec{
+    text-align: left
+}
+/*End Register style*/

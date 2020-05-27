@@ -26,6 +26,9 @@
     }
 }
 @media(max-width:991px){
+    .register-sec .background-sec{
+        display: none
+    }
     footer .top-footer .info li{
         margin-bottom: 17px;
     }
@@ -250,12 +253,12 @@ font-size: 30px}
 }/*520*/
 @media(max-width:425px){
     .login-modal .m-btn,
-    .login-modal .google-sign{
+     .google-sign{
         height: 60px;
         line-height: 60px;
         font-size: 17px
     }
-    .login-modal .google-sign img{
+     .google-sign img{
         width: 20px;
         left: 25px
     }
