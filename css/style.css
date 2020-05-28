@@ -1308,3 +1308,76 @@ border-radius: 36px;
     text-decoration: underline
 }
 /*End profile style*/
+/*Start Cart Style*/
+.cart-pg .cart-sec{
+}
+.cart-pg .cart-sec .cart-header{
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee
+}
+.cart-pg .cart-sec .cart-header .title{
+    font-size: 30px;
+    margin: auto 0
+}
+.cart-pg .cart-sec .cart-header .title i{
+    color: #BABABA
+}
+.cart-pg .cart-sec .cart-header .cart-info a {
+    display: inline-block
+}
+.cart-pg .cart-sec .cart-header .cart-info span{
+    color: #BABABA;
+    margin-left: 20px
+}
+.cart-pg .count-number{
+    position: relative;
+    z-index: 9
+}
+.cart-pg .count-number{
+    padding: 30px;
+    justify-content: center;
+}
+.cart-pg .count-number h5{
+    font-size: 20px;
+    margin: auto 0 auto 20px
+}
+.cart-pg .count-number .number span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0px 1px 6px #00000029;
+    text-align: center;
+    color: #9D2125;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    cursor: pointer;
+        transition: all .3s
+
+}
+.cart-pg .count-number .number span:hover{
+    background: #9D2125;
+    color: #fff;
+    transition: all .3s
+}
+.cart-pg .count-number .number input{
+    width: 40px;
+    text-align: center;
+    border: none;
+}
+.cart-pg .delet-cart{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    color: #9D2125
+}
+.cart-pg h5{
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.cart-pg .default-voucher{
+    width: 600px;
+    margin-bottom: 30px
+}
+/*End Cart Style*/

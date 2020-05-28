@@ -26,6 +26,9 @@
     }
 }
 @media(max-width:991px){
+    .cart-pg .cart-sec{
+        margin-bottom: 100px
+    }
     .profile-pg form .details-col input[type="text"]:disabled{
         margin-top: 30px;
         margin-bottom: 10px
@@ -201,7 +204,15 @@ font-size: 30px}
     }
 }/*991*/
 @media(max-width:768px){
-    .profile-pg .profile-content .default-voucher{
+    .cart-pg .cart-header .d-flex-sb{
+        display: block;
+        text-align: center
+    }
+    .cart-pg .cart-sec .cart-header .title{
+        margin-bottom: 30px
+    }
+    .profile-pg .profile-content .default-voucher,
+    .cart-pg .default-voucher{
         width: 100%
     }
     .single-store-pg .store-body .m-btn{
@@ -265,6 +276,11 @@ font-size: 30px}
     }
 }/*520*/
 @media(max-width:425px){
+    .cart-pg .cart-sec .cart-header .cart-info span{
+        margin-bottom: 30px;
+        margin-left: 0;
+        display: block
+    }
     .profile-pg .profile-content .default-voucher .d-flex-sb{
         padding: 20px;
     }
