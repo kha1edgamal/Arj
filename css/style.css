@@ -902,7 +902,8 @@ footer hr{
     border-bottom: 0
 }
 .modal-content{
-    border-radius: 39px
+    border-radius: 39px;
+    padding: 30px;
 }
 .modal-header .close{
     position: absolute;
@@ -1096,6 +1097,17 @@ border-radius: 36px;
 }
 .single-store-pg  .store-body .m-btn i{
     padding-right: 20px
+}
+.single-store-pg .cart-modal .modal-body h1 i{
+    display: block;
+    font-size: 80px;
+    color: #D1D1D1;
+    margin-bottom: 20px;
+}
+.single-store-pg .cart-modal .modal-body h1 {
+    color: #9D2125;
+    text-align: center;
+    font-size: 30px
 }
 /*End Single Store Style*/
 
@@ -1370,14 +1382,166 @@ border-radius: 36px;
     position: absolute;
     left: 30px;
     top: 20px;
-    color: #9D2125
+    color: #9D2125;
+    z-index: 9
 }
-.cart-pg h5{
+.cart-pg .delet-cart:hover{
+    text-decoration: underline;
+
+}
+.cart-pg .cart-sec .cart-body > .custom-container >  h5{
     margin-bottom: 40px;
     font-size: 25px;
 }
 .cart-pg .default-voucher{
     width: 600px;
     margin-bottom: 30px
+}
+.cart-pg .choose-card-modal .modal-body .d-flex{
+    justify-content: center;
+}
+.cart-pg .choose-card-modal .modal-body h2{
+    margin-bottom: 30px;
+}
+.cart-pg .choose-card-modal .modal-body .normal-card {
+           box-shadow: 0px 1px 6px #00000029;
+    padding: 30px 0;
+    margin-left: 30px;
+    width: 270px;
+    cursor: pointer;
+        transition: all .3s
+
+}
+.cart-pg .choose-card-modal .modal-body .normal-card:hover{
+    box-shadow: 0px 1px 14px #0000005c;
+    transition: all .3s
+
+}
+.cart-pg .choose-card-modal .modal-body .normal-card .card-number{
+    font-size: 25px;
+    text-align: center
+}
+.cart-pg .choose-card-modal .modal-body .add-card{
+     box-shadow: 0px 1px 6px #00000029;
+    padding: 30px;
+        width: 270px;
+        text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .3s
+
+}
+.cart-pg .choose-card-modal .modal-body .add-card:hover{
+    box-shadow: 0px 1px 14px #0000005c;
+    transition: all .3s
+}
+.cart-pg .choose-card-modal .modal-body .add-card i{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    color: #BABABA;
+    margin-bottom: 17px
+}
+.cart-pg .choose-card-modal .modal-body .normal-card .card-logo{
+    width: 60px;
+    height: 40px;
+    margin: auto auto 40px auto;
+}
+.cart-pg .choose-card-modal .modal-body .normal-card .card-logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.cart-pg .complete-purchase-modal .modal-body h2,
+.cart-pg .done-modal .modal-body h2{
+    margin-bottom: 30px;
+}
+.cart-pg .complete-purchase-modal .modal-body .d-flex-sb{
+    margin-bottom: 30px
+}
+.cart-pg .complete-purchase-modal .modal-body  h4{
+    font-family: neo-reg;
+    font-size: 25px;
+    color: #BABABA;
+}
+.cart-pg .complete-purchase-modal .modal-body h3{
+    font-family: neo-reg;
+    margin-bottom: 40px;
+}
+.cart-pg .complete-purchase-modal .modal-body .note{
+    color: #9D2125;
+    margin-bottom: 30px
+}
+.cart-pg  .done-modal .box{
+    box-shadow: 0px 1px 10px #00000029;
+    margin-bottom: 30px;
+    border-radius: 19px
+}
+.cart-pg  .done-modal .box .store-logo{
+    width: 150px;
+    height: 50px;
+    overflow: hidden
+}
+.cart-pg  .done-modal .box .store-logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.cart-pg  .done-modal .box .d-flex-sb{
+    padding:  30px
+}
+.cart-pg .done-modal .price{
+    font-size: 22px;
+    color: #BABABA;
+    margin: auto 0
+}
+.cart-pg .done-modal .code{
+    background: #F2F2F2;
+    padding: 0;
+}
+.cart-pg .done-modal .share{
+    color: #9D2125;
+}
+.cart-pg .done-modal .share:hover{
+    text-decoration: underline
+}
+.cart-pg .share-modal .cpy-container{
+    background: #FAF3F4;
+    padding: 30px;
+    border-radius: 39px;
+}
+.cart-pg .share-modal .cpy-container a.cpy-btn{
+    text-align: left;
+    color: #9D2125;
+    margin-bottom: 30px
+}
+.cart-pg .share-modal  .cpy-container p{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.cart-pg .share-modal  .cpy-container p strong{
+    color: #9D2125;
+}
+.cart-pg .share-modal  .cpy-container h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.cart-pg .share-modal  .share h5{
+    font-family: neo-reg;
+    margin-top: 40px;
+}
+.cart-pg .share-modal  .share ul{
+    text-align: center;
+    margin-top: 20px;
+}
+.cart-pg .share-modal  .share ul li{
+    display: inline-block;
+    transition: all .3s;
+    padding-top: 20px;
+}
+.cart-pg .share-modal  .share ul li:hover{
+    padding-top: 0;
+    transition: all .3s;
+}
+.cart-pg .share-modal  .share ul li:not(:last-child){
+    margin-left: 30px
 }
 /*End Cart Style*/

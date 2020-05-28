@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     //Minus and Plus Counter
     $('.cart-sec .minus').click(function () {
         var $input = $(this).parent().find('input');

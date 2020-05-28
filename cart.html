@@ -84,6 +84,195 @@
         </div>
         <!--/Login Modal-->
 
+        <!--Choose Card Modal-->
+        <div class="modal fade choose-card-modal" id="chooseCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="text-center">اختر بطاقة</h2>
+                        <div class="d-flex">
+                           <div class="normal-card" data-toggle="modal" data-target="#completePurchase" data-dismiss="modal">
+                                <div class="card-logo">
+                                    <img src="imgs/visa.png" alt="">
+                                </div>
+                                <div class="card-number">
+                                    <bdi>**** **** **** 1234</bdi>
+                                </div>
+                            </div>
+
+                            <a href="#" class="add-card" >
+                                <i class="fa fa-plus"></i>
+                                اضافة بطاقة
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/Choose Card Modal-->
+        <!--Completet Purchase Modal-->
+        <div class="modal fade complete-purchase-modal" id="completePurchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="text-center">إتمام الدفع</h2>
+                        <div class="d-flex-sb">
+                            <h4>1 قسيمة</h4>
+                            <h4>1000 ريال</h4>
+                        </div>
+                        <div class="d-flex-sb">
+                            <h4>1 قسيمة</h4>
+                            <h4>1000 ريال</h4>
+                        </div>
+                        <div class="d-flex-sb">
+                            <h4>1 قسيمة</h4>
+                            <h4>1000 ريال</h4>
+                        </div>
+                        <hr>
+                        <div class="d-flex-sb mb-0">
+                            <h3>الاجمالي</h3>
+                            <h3>1550 ريال</h3>
+                        </div>
+                        <div class="note text-center">
+                            <bdi>**المبالغ المدفوعه لا يتم استراجعها **</bdi>
+                        </div>
+                        <a href="" class="m-btn w-100" data-toggle="modal" data-target="#doneModal" data-dismiss="modal">إتمام الدفع</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--/Complete Purchase Modal-->
+
+        <!--Start Done Modal-->
+         <div class="modal fade done-modal" id="doneModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="text-center">تم شراء القسيمة</h2>
+                        <div class="box">
+                            <div class="d-flex-sb">
+                                <div class="store-logo">
+                                    <img src="imgs/jumia.png" alt="">
+                                </div>
+                                <div class="price">
+                                    1000 ريال
+                                </div>
+                            </div>
+                            <div class="code d-flex-sb">
+                                <h5 class="code-num">
+                                    كود القسيمة : A12345
+                                </h5>
+                                <a href="#" class="share" data-toggle="modal" data-target="#shareModal" data-dismiss="modal">
+                                    <i class="fa fa-share"></i>
+                                    مشاركة
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="d-flex-sb">
+                                <div class="store-logo">
+                                    <img src="imgs/noon.png" alt="">
+                                </div>
+                                <div class="price">
+                                    1000 ريال
+                                </div>
+                            </div>
+                            <div class="code d-flex-sb">
+                                <h5 class="code-num">
+                                    كود القسيمة : A12345
+                                </h5>
+                                <a href="#" class="share" data-toggle='modal' data-target="#shareModal" data-dismiss="modal">
+                                    <i class="fa fa-share"></i>
+                                    مشاركة
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Start End Modal-->
+
+
+        <!--Start Share Modal-->
+<div class="modal fade share-modal" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cpy-container">
+                            <a href="" class="cpy-btn" >
+                                <i class="fa fa-copy"></i>
+                                نسخ
+                            </a>
+                            <p id="textToCopy">
+                                هدية مقدمة لك من خلال موقع طوبى قسيمة شرائية بقيمة <strong> 1000 ريال</strong> من متجر
+                                <strong>جوميا</strong>
+                            </p>
+                            <h3>لاختيار هديتك</h3>
+                            <a href="our-store.html" class="m-btn w-100">اذهب الى المتجر</a>
+                        </div>
+                        <div class="share">
+                            <h5 class="text-center">مشاركة عبر</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="imgs/whatsapp-color.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="imgs/twitter-color.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="imgs/facebook-color.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--End Share Modal-->
+
+
+
+
+
         <!--Start Header Section-->
         <header class="logged-in" id="myHeader">
             <div class="custom-container">
@@ -152,7 +341,7 @@
                        </div>
                        <div class="cart-info">
                           <span>الاجمالي : 1550 ريال</span>
-                           <a href="#" class="m-btn">
+                           <a href="#" class="m-btn" data-toggle="modal" data-target="#chooseCard">
                                متابعة الى الدفع
                            </a>
                        </div>
