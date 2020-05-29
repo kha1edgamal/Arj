@@ -21,8 +21,7 @@ $(document).ready(function () {
         console.log('x Clicked');
     })
 
-    //Editable Paragraph
-    document.getElementById("editableText").contentEditable='true';
+
 
     //Minus and Plus Counter
     $('.cart-sec .minus').click(function () {
