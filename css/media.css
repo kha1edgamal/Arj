@@ -22,10 +22,51 @@
     footer{
             padding-top: 70px;
     background-color: #292830;
+        margin-top: 0
 
     }
 }
 @media(max-width:991px){
+    .about-us-pg .our-values .circle{
+        text-align: center;
+        margin: auto auto 30px auto
+    }
+    .about-us-pg .our-goals .left ul{
+        margin-right: 0
+    }
+    .about-us-pg .our-goals .left .section-title{
+        text-align: right;
+        margin-top: 50px
+    }
+    .about-us-pg .our-msg .envelope-bg{
+        width: 100%
+    }
+    .about-us-pg .why-tubaa .section-title,
+     .about-us-pg .why-tubaa p{
+        text-align: center
+    }
+    .about-us-pg .why-tubaa p{
+        padding: 0
+    }
+    .about-us-pg .why-tubaa,
+    .about-us-pg .our-goals{
+        background: #FBFBFB
+    }
+    .about-us-pg .about-text p{
+        padding: 0
+    }
+    .about-us-pg .about-header{
+        background-size: 100% 100%
+    }
+    .contact-us-pg .contact-sec form{
+        padding: 0;
+        margin-bottom: 70px
+    }
+    .contact-us-pg .contact-sec .contact-head{
+        height: 400px;
+        background-attachment: inherit;
+        background-size: cover
+    }
     .cart-pg .cart-sec{
         margin-bottom: 100px
     }
@@ -204,6 +245,22 @@ font-size: 30px}
     }
 }/*991*/
 @media(max-width:768px){
+    .about-us-pg .our-goals .right .section-title,
+    .about-us-pg .our-goals .left .section-title{
+        text-align: center;
+    }
+    .about-us-pg  .our-goals ul {
+        padding-right: 30px
+    }
+    .section-title h2:before{
+        right: 0;
+    }
+    .section-title h2:after{
+        left: 0
+    }
+    .about-us-pg .our-msg .envelope-bg{
+        background-size: 100% 100%
+    }
     .cart-pg .cart-header .d-flex-sb{
         display: block;
         text-align: center
@@ -256,11 +313,36 @@ font-size: 30px}
 
 } /*/768*/
 @media(max-width:575px){
+    .about-us-pg .our-msg .envelope-bg p{
+        position: static;
+        transform: unset;
+        margin-top: 30px
+    }
+    .about-us-pg .our-msg .envelope-bg .section-title{
+        position: static;
+        transform: unset;
+    }
     footer .top-footer .logo{
         margin-bottom: unset;
     }
+    .our-vision .light{
+        display: none
+    }
+    .about-us-pg .our-vision .text .section-title{
+        text-align: center
+    }
+    .about-us-pg .our-msg .envelope-bg{
+        background: #fff;
+        height: auto
+    }
 }
 @media(max-width:520px){
+    .about-us-pg .about-header{
+        height: 300px
+    }
+    .contact-us-pg .contact-sec form textarea{
+        height: 300px
+    }
     .hero .left-img img{
         width: 300px;
         height: 300px
@@ -275,7 +357,17 @@ font-size: 30px}
         right: 0
     }
 }/*520*/
-@media(max-width:425px){
+@media(max-width:426px){
+    .about-us-pg .about-header span img{
+        width: 40px
+    }
+    .about-us-pg .about-header h4{
+        font-size: 20px
+    }
+    .contact-us-pg .contact-sec .contact-head{
+        height: 200px;
+        background-size: cover
+    }
     .cart-pg .cart-sec .cart-header .cart-info span{
         margin-bottom: 30px;
         margin-left: 0;

@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile</title>
+    <title>Tubaa-Contact Us</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="imgs/logo.png">
     <!--Bootstrap Minified-->
@@ -42,7 +42,7 @@
         </div>
     </div>
     <!--End Preloader Section-->
-    <div class="wrapper profile-pg">
+    <div class="wrapper about-us-pg">
         <!--Login Modal-->
 
         <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -83,41 +83,6 @@
             </div>
         </div>
         <!--/Login Modal-->
-
-        <!--Start Share Modal-->
-<div class="modal fade share-modal" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="cpy-container">
-                            <a  class="cpy-btn" onclick="document.getElementById('editableText').focus();document.execCommand('copy');" >
-                                <i class="fa fa-copy"></i>
-                                نسخ
-                            </a>
-                            <p id="editableText"  contenteditable="true"
-                           onfocus="document.execCommand('selectAll',false,null);">
-                                هدية مقدمة لك من موقع طوبى قسيمة شراء بقيمة <strong>1000 ريال</strong> من متجر جوميا كود القسيمة <strong>A1234</strong> يمكنك التوجه للمتجر من <a href="#">هنا</a>
-                            </p>
-
-<!--                            <h3>لاختيار هديتك</h3>-->
-<!--                            <a href="our-store.html" class="m-btn w-100">اذهب الى المتجر</a>-->
-                        </div>
-                        <div class="share">
-                            <h5 class="text-center">مشاركة عبر</h5>
-                            <a href="#"><img src="imgs/whatsapp-color.png" alt=""></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!--End Share Modal-->
 
         <!--Start Header Section-->
         <header class="logged-in" id="myHeader">
@@ -176,132 +141,155 @@
         </header>
         <!--End Header Section-->
 
+         <!--start about header-->
+         <section class="about-header">
+             <h4>لحظه سعاده تهديها لمن تحب
+             <span><img src="imgs/heart.png" alt=""></span>
+             </h4>
+         </section>
+         <!--End about header-->
 
-        <!--Start Profile Content Section-->
-        <section class="profile-content ">
-                 <div class="tabs-header">
-                    <div class="custom-container">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">الملف الشخصي</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">طلباتي</a>
-                            </li>
-                        </ul>
-                    </div>
-                 </div>
-
-               <div class="tabs-body">
-                   <div class="custom-container">
-                       <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <form action="">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <div class="add-photo">
-                                              <div class="inp-photo">
-                                                    <div class="img-container">
-                                                        <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
-                                                        </div>
-                                                    </div>
-                                                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                    <label for="imageUpload">
-                                                      <i class="fa fa-plus"></i>
-                                                      اضافة صورة
-                                                  </label>
-
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-1">
-                                        <div class="line"></div>
-                                      </div>
-                                      <div class="col-lg-9">
-                                          <div class="details-col">
-                                              <input type="text" value="user28" disabled>
-                                              <label for="" class="email">البريد الالكتروني</label>
-                                              <input type="email" value="user@info.com" disabled>
-                                              <a href="#" class="m-btn" id="editBtn">تعديل</a>
-                                              <a href="#" class="logout m-btn">
-                                              <i class="fa fa-sign-out-alt"></i>
-                                              تسجيل خروج</a>
-
-                                              <div class="cards">
-                                                  <h3>البطاقات المسجلة</h3>
-                                                  <div class="single-card">
-                                                      <div class="d-flex-sb">
-                                                          <div class="card-type">
-                                                              <img src="imgs/visa.png" alt="">
-                                                          </div>
-                                                          <a href="#" class="delet-card">
-                                                             <i class="fa fa-trash-alt"></i>
-                                                             حذف
-                                                          </a>
-                                                      </div>
-                                                      <div class="card-number">
-                                                          <bdi>**** **** **** 1234</bdi>
-                                                      </div>
-                                                  </div>
-                                                  <a href="" class="add-new-card">
-                                                      <i class="fa fa-credit-card"></i>
-                                                      إضافة بطاقة جديدة
-                                                  </a>
-                                              </div>
-
-                                          </div>
-                                      </div>
-                                  </div>
-                              </form>
-                           </div>
-
-
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="default-voucher">
-                              <div class="comp-logo">
-                                <img src="imgs/jumia.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class=" d-flex-sb">
-                                <h5>كود القسيمة : A12345</h5>
-                                <a href="#" data-toggle='modal' data-target="#shareModal">
-                                    <i class="fa fa-share"></i>
-                                    مشاركة
-                                </a>
-                            </div>
-                          </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="default-voucher">
-                              <div class="comp-logo">
-                                <img src="imgs/jumia.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class=" d-flex-sb">
-                                <h5>كود القسيمة : A12345</h5>
-                                <a href="#" data-toggle='modal' data-target="#shareModal">
-                                    <i class="fa fa-share"></i>
-                                    مشاركة
-                                </a>
-                            </div>
-                          </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                   </div>
-               </div>
-
+        <!--Start about text -->
+        <section class="about-text s-padding">
+            <div class="custom-container">
+                <div class="section-title">
+                    <h2>عن طوبي</h2>
+                </div>
+                <p class="text-center">
+                    منصة طوبى علامة تجارية سعودية تم تأسيسها عام 2020 م، ذات قيمة اقتصادية واجتماعية، تكمن قيمتها في إهداء السعادة، يتم من خلالها تقديم الهدية كقسائم رقمية بطريقة تقنية وتجربة نوعية
+                </p>
+            </div>
         </section>
-        <!--End Profile Content Section-->
+        <!--end about text -->
+
+          <!--Start why tubaa-->
+          <section class="why-tubaa s-padding">
+              <div class="custom-container">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="section-title">
+                              <h2>لماذا طوبي</h2>
+                          </div>
+                          <p>
+                              قسائم طوبى الرقمية تساعد الأشخاص للقيام بواجب الأهداء بدون عناء وتمكن مستقبل الهدية باختيار ما تطيب له نفسه مع توصيلها أينما كان وقد تساهم بالتخفيف من استرجاع واستبدال الهدايا للمحلات والتقليل من تكلفة طباعة القسائم وفواتير تبديل الهدايا، وتساهم أيضا بزيادة مبيعات السوق الإلكتروني للشركة
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!--End why tubaa-->
+
+
+          <!--Start Our Vision-->
+          <section class="our-vision s-padding">
+              <div class="custom-container">
+                  <div class="row">
+                      <div class="col-xl-4 col-md-12">
+                          <div class="light">
+                              <img src="imgs/LightBulbIcon.png" alt="">
+                          </div>
+                      </div>
+                      <div class="col-xl-8 col-md-12">
+                          <div class="text">
+                              <div class="section-title">
+                                  <h2>رؤيتنا</h2>
+                              </div>
+                              <p>
+                                  أن تكون منصة طوبى إضافة نوعية لعالم التجارة الإلكترونية، وتحظى بأقصى درجات التفضيل والثقة من جانب عملائنا وشركائنا وأكبر منصة للقسائم الرقمية على مستوى الشرق الأوسط في 2030 م
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!--End Our Vision-->
+
+          <!--Start Our Message-->
+          <section class="our-msg ">
+             <div class="custom-container">
+                <div class="envelope-bg">
+                    <div class="section-title">
+                        <h2>رسالتنا</h2>
+                    </div>
+                    <p>تقديم خدمة تقنية في مجال الهدية، ونعمل على تشجيع العطاء والسعي لتنمية وعي الطلب من السوق الإلكتروني عند أفراد المجتمع</p>
+                </div>
+
+             </div>
+
+          </section>
+          <!--End Our Message-->
+          <!--Start OUr Goals-->
+          <div class="our-goals s-padding">
+              <div class="custom-container">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="right">
+                              <div class="section-title">
+                                  <h2>ركائزنا</h2>
+                              </div>
+                              <ul>
+                                  <li>رؤية حكومية محفزة</li>
+                                  <li>سرعة تقبل المجتمع لأدوات التنقنية</li>
+                                  <li>متاجر إلكترونية لأكبر وأفضل الماركات العالمية</li>
+                              </ul>
+
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="left">
+                              <div class="section-title">
+                                  <h2>اهدافنا</h2>
+                              </div>
+                              <ul>
+                                  <li> تسخير التقنية في تسهيل عملية الإهداء</li>
+                                  <li>تنمية وعي الطلب من السوق الإلكتروني</li>
+                              </ul>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--End Our Goals-->
+
+
+          <!--Start our values -->
+          <section class="our-values s-padding">
+              <div class="custom-container">
+                  <div class="section-title">
+                          <h2>قيمنا</h2>
+                      </div>
+                  <div class="row text-center">
+                     <div class="col">
+                         <div class="circle color">
+                             <h3>النزاهه</h3>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="circle">
+                             <h3>الولاء</h3>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="circle">
+                             <h3>المصداقية</h3>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="circle">
+                             <h3>الإلتزام</h3>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="circle color">
+                             <h3>الاحترام</h3>
+                         </div>
+                     </div>
+
+                  </div>
+              </div>
+          </section>
+          <!--End our values -->
 
         <!--Start Footer Section-->
         <footer >

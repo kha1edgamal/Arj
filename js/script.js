@@ -1,5 +1,13 @@
 $(document).ready(function () {
+    //Copy Text On Click
+    $('#x').click(function(){
+        $("#editableText").select();
+    document.execCommand('copy');
+        console.log('x Clicked');
+    })
 
+    //Editable Paragraph
+    document.getElementById("editableText").contentEditable='true';
 
     //Minus and Plus Counter
     $('.cart-sec .minus').click(function () {

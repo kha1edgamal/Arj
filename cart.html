@@ -231,36 +231,21 @@
                     </div>
                     <div class="modal-body">
                         <div class="cpy-container">
-                            <a href="" class="cpy-btn" >
+                            <a  class="cpy-btn" onclick="document.getElementById('editableText').focus();document.execCommand('copy');" >
                                 <i class="fa fa-copy"></i>
                                 نسخ
                             </a>
-                            <p id="textToCopy">
-                                هدية مقدمة لك من خلال موقع طوبى قسيمة شرائية بقيمة <strong> 1000 ريال</strong> من متجر
-                                <strong>جوميا</strong>
+                            <p id="editableText"  contenteditable="true"
+                           onfocus="document.execCommand('selectAll',false,null);">
+                                هدية مقدمة لك من موقع طوبى قسيمة شراء بقيمة <strong>1000 ريال</strong> من متجر جوميا كود القسيمة <strong>A1234</strong> يمكنك التوجه للمتجر من <a href="#">هنا</a>
                             </p>
-                            <h3>لاختيار هديتك</h3>
-                            <a href="our-store.html" class="m-btn w-100">اذهب الى المتجر</a>
+
+<!--                            <h3>لاختيار هديتك</h3>-->
+<!--                            <a href="our-store.html" class="m-btn w-100">اذهب الى المتجر</a>-->
                         </div>
                         <div class="share">
                             <h5 class="text-center">مشاركة عبر</h5>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="imgs/whatsapp-color.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="imgs/twitter-color.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="imgs/facebook-color.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="#"><img src="imgs/whatsapp-color.png" alt=""></a>
                         </div>
                     </div>
 

@@ -1503,45 +1503,281 @@ border-radius: 36px;
 .cart-pg .done-modal .share:hover{
     text-decoration: underline
 }
-.cart-pg .share-modal .cpy-container{
+ .share-modal .cpy-container{
     background: #FAF3F4;
     padding: 30px;
     border-radius: 39px;
 }
-.cart-pg .share-modal .cpy-container a.cpy-btn{
+ .share-modal .cpy-container a.cpy-btn{
     text-align: left;
     color: #9D2125;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+     cursor: pointer
 }
-.cart-pg .share-modal  .cpy-container p{
-    font-size: 25px;
-    margin-bottom: 40px;
+ .share-modal  .cpy-container p{
+    font-size: 23px;
+     width: 100%;
+     border: none;
+     background: #fff;
+     border-radius: 20px;
+     height: 200px;
+     padding: 20px
 }
-.cart-pg .share-modal  .cpy-container p strong{
+ .share-modal  .cpy-container p strong{
     color: #9D2125;
 }
-.cart-pg .share-modal  .cpy-container h3{
+.share-modal  .cpy-container p a{
+    display: inline-block;
+    color: #9D2125;
+    text-decoration: underline;
+    cursor: pointer;
+}
+ .share-modal  .cpy-container h3{
     font-size: 25px;
     margin-bottom: 30px;
 }
-.cart-pg .share-modal  .share h5{
+.share-modal  .share{
+    text-align: center
+}
+ .share-modal  .share h5{
     font-family: neo-reg;
     margin-top: 40px;
+     display: inline-block;
+     vertical-align: baseline;
+     margin-left: 20px
 }
-.cart-pg .share-modal  .share ul{
+.share-modal  .share a{
+    display: inline-block
+}
+ .share-modal  .share ul{
     text-align: center;
     margin-top: 20px;
 }
-.cart-pg .share-modal  .share ul li{
+ .share-modal  .share ul li{
     display: inline-block;
     transition: all .3s;
     padding-top: 20px;
 }
-.cart-pg .share-modal  .share ul li:hover{
+ .share-modal  .share ul li:hover{
     padding-top: 0;
     transition: all .3s;
 }
-.cart-pg .share-modal  .share ul li:not(:last-child){
+ .share-modal  .share ul li:not(:last-child){
     margin-left: 30px
 }
 /*End Cart Style*/
+/*Start Contact Style*/
+.contact-us-pg .contact-sec .section-title span{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: neo-reg;
+    color: #BABABA;
+}
+.contact-us-pg .contact-sec .contact-head img{
+    max-width: 100%;
+    height: 400px;
+    width: 100%
+}
+.contact-us-pg .contact-sec .contact-head{
+    position: relative;
+    height: 642px;
+    width: 100%;
+    background-image: url(../imgs/contact-header.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.contact-us-pg .contact-sec form input,
+.contact-us-pg .contact-sec form textarea{
+    display: block;
+    width: 100%;
+    background: #F1F1F1;
+    border: none;
+    border-radius: 39px;
+    margin-bottom: 30px;
+        padding: 0 30px;
+    border: 2px solid transparent;
+        transition: all .3s
+
+
+
+}
+.contact-us-pg .contact-sec form input:focus,
+.contact-us-pg .contact-sec form textarea:focus{
+    outline: none;
+    border-color: #9D2125;
+    background: transparent;
+    transition: all .3s
+
+}
+.contact-us-pg .contact-sec form textarea{
+    padding: 30px
+}
+.contact-us-pg .contact-sec form{
+    padding: 0 200px;
+}
+.contact-us-pg .contact-sec form input{
+    height: 60px;
+    line-height: 60px;
+}
+.contact-us-pg .contact-sec form button{
+    margin: auto;
+    display: block;
+    margin-top: 80px
+}
+
+/*End Contact Style*/
+
+/*Start About Us Style*/
+.about-us-pg .about-header{
+    position: relative;
+    height: 642px;
+    width: 100%;
+    background-image: url('../imgs/about-us-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-us-pg .about-header h4{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #9D2125;
+    width: 100%;
+    text-align: center
+
+}
+.about-us-pg .about-header span img{
+     animation: heartbeat 2s infinite;
+    animation-iteration-count: 1;
+    width: 70px
+}
+.about-us-pg .about-text .section-title{
+    margin-bottom: 40px
+}
+.about-us-pg .about-text p{
+        font-size: 25px;
+    font-family: neo-reg;
+    line-height: 50px;
+    padding: 0 200px;
+}
+.about-us-pg .why-tubaa{
+    background-image: url(../imgs/why-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.about-us-pg .why-tubaa .section-title{
+    margin-bottom: 40px;
+    text-align: right
+}
+.about-us-pg .why-tubaa p,
+.about-us-pg .our-vision .text p{
+    text-align: right;
+    font-size: 25px;
+    font-family: neo-reg;
+    line-height: 50px;
+    padding-left: 500px
+}
+.about-us-pg .our-vision .light img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 50px
+}
+.about-us-pg .our-vision .text .section-title{
+    text-align: right;
+    margin-bottom: 50px
+}
+.about-us-pg .our-vision .text p{
+    padding-left: 0
+}
+.about-us-pg .our-msg .sectiont-title{
+    margin-bottom: 40px;
+}
+.about-us-pg .our-msg {
+    margin-bottom: 100px
+}
+.about-us-pg .our-msg .envelope-bg {
+    background-image: url('../imgs/envelope.png');
+    width: 900px;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    position: relative
+}
+.about-us-pg .our-msg .envelope-bg .section-title{
+    position: absolute;
+    left: 50%;
+    top: 23%;
+    transform: translate(-50%,-50%)
+}
+.about-us-pg .our-msg .envelope-bg p{
+    position: absolute;
+    left: 50%;
+    top: 41%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-family: neo-reg;
+    line-height: 50px;
+    text-align: center
+}
+.about-us-pg .our-goals{
+    background-color: #FBFBFB;
+    background-image: url('../imgs/goals-bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 40px
+}
+.about-us-pg .our-goals .right .section-title{
+    text-align: right;
+    margin-bottom: 60px
+}
+.about-us-pg .our-goals .left .section-title{
+    margin-bottom: 60px
+}
+.about-us-pg .our-goals ul li{
+    list-style: disc;
+    margin-bottom: 20px;
+    font-family: neo-reg;
+    font-size: 25px;
+}
+.about-us-pg .our-goals .left ul{
+    margin-right: 160px;
+}
+.about-us-pg .our-values .section-title{
+    margin-bottom: 70px
+}
+.about-us-pg .our-values .circle{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 50%;
+    background: #E4CBCC;
+    color: #000;
+    position: relative;
+    border: 3px solid #BABABA33;
+    box-shadow: inset 0 0 0px 7px white;
+}
+.about-us-pg .our-values .circle.color{
+    background: #F3F3F3;
+    color: #9D2125;
+}
+.about-us-pg .our-values .circle h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+.about-us-pg footer{
+    margin-top: 0;
+}
+/*end About Us Style*/
+

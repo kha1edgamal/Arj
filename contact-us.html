@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile</title>
+    <title>Tubaa-Contact Us</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="imgs/logo.png">
     <!--Bootstrap Minified-->
@@ -42,7 +42,7 @@
         </div>
     </div>
     <!--End Preloader Section-->
-    <div class="wrapper profile-pg">
+    <div class="wrapper contact-us-pg">
         <!--Login Modal-->
 
         <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -83,41 +83,6 @@
             </div>
         </div>
         <!--/Login Modal-->
-
-        <!--Start Share Modal-->
-<div class="modal fade share-modal" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="cpy-container">
-                            <a  class="cpy-btn" onclick="document.getElementById('editableText').focus();document.execCommand('copy');" >
-                                <i class="fa fa-copy"></i>
-                                نسخ
-                            </a>
-                            <p id="editableText"  contenteditable="true"
-                           onfocus="document.execCommand('selectAll',false,null);">
-                                هدية مقدمة لك من موقع طوبى قسيمة شراء بقيمة <strong>1000 ريال</strong> من متجر جوميا كود القسيمة <strong>A1234</strong> يمكنك التوجه للمتجر من <a href="#">هنا</a>
-                            </p>
-
-<!--                            <h3>لاختيار هديتك</h3>-->
-<!--                            <a href="our-store.html" class="m-btn w-100">اذهب الى المتجر</a>-->
-                        </div>
-                        <div class="share">
-                            <h5 class="text-center">مشاركة عبر</h5>
-                            <a href="#"><img src="imgs/whatsapp-color.png" alt=""></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!--End Share Modal-->
 
         <!--Start Header Section-->
         <header class="logged-in" id="myHeader">
@@ -176,132 +141,32 @@
         </header>
         <!--End Header Section-->
 
-
-        <!--Start Profile Content Section-->
-        <section class="profile-content ">
-                 <div class="tabs-header">
-                    <div class="custom-container">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">الملف الشخصي</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">طلباتي</a>
-                            </li>
-                        </ul>
-                    </div>
-                 </div>
-
-               <div class="tabs-body">
-                   <div class="custom-container">
-                       <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <!--Start Contact Us Section-->
+          <section class="contact-sec">
+              <div class="contact-head">
+              </div>
+              <div class="contact-body s-padding">
+                  <div class="section-title">
+                      <h2>تواصل معنا</h2>
+                      <span>شاركنا مقترحاتك لنتواصل معك بكل حب</span>
+                  </div>
+                     <div class="custom-container">
+                         <div class="row">
+                          <div class="col-12">
                               <form action="">
-                                  <div class="row">
-                                      <div class="col-lg-2">
-                                          <div class="add-photo">
-                                              <div class="inp-photo">
-                                                    <div class="img-container">
-                                                        <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
-                                                        </div>
-                                                    </div>
-                                                  <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                                    <label for="imageUpload">
-                                                      <i class="fa fa-plus"></i>
-                                                      اضافة صورة
-                                                  </label>
-
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-1">
-                                        <div class="line"></div>
-                                      </div>
-                                      <div class="col-lg-9">
-                                          <div class="details-col">
-                                              <input type="text" value="user28" disabled>
-                                              <label for="" class="email">البريد الالكتروني</label>
-                                              <input type="email" value="user@info.com" disabled>
-                                              <a href="#" class="m-btn" id="editBtn">تعديل</a>
-                                              <a href="#" class="logout m-btn">
-                                              <i class="fa fa-sign-out-alt"></i>
-                                              تسجيل خروج</a>
-
-                                              <div class="cards">
-                                                  <h3>البطاقات المسجلة</h3>
-                                                  <div class="single-card">
-                                                      <div class="d-flex-sb">
-                                                          <div class="card-type">
-                                                              <img src="imgs/visa.png" alt="">
-                                                          </div>
-                                                          <a href="#" class="delet-card">
-                                                             <i class="fa fa-trash-alt"></i>
-                                                             حذف
-                                                          </a>
-                                                      </div>
-                                                      <div class="card-number">
-                                                          <bdi>**** **** **** 1234</bdi>
-                                                      </div>
-                                                  </div>
-                                                  <a href="" class="add-new-card">
-                                                      <i class="fa fa-credit-card"></i>
-                                                      إضافة بطاقة جديدة
-                                                  </a>
-                                              </div>
-
-                                          </div>
-                                      </div>
-                                  </div>
+                                  <input type="text" placeholder="الاسم">
+                                  <input type="email" placeholder="البريد الالكتروني">
+                                  <textarea name="" id="" rows="20" placeholder="الموضوع"></textarea>
+                                  <button class="m-btn">ارسال</button>
                               </form>
-                           </div>
-
-
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="default-voucher">
-                              <div class="comp-logo">
-                                <img src="imgs/jumia.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class=" d-flex-sb">
-                                <h5>كود القسيمة : A12345</h5>
-                                <a href="#" data-toggle='modal' data-target="#shareModal">
-                                    <i class="fa fa-share"></i>
-                                    مشاركة
-                                </a>
-                            </div>
                           </div>
-                                </div>
+                       </div>
+                     </div>
 
-                                <div class="col-12">
-                                    <div class="default-voucher">
-                              <div class="comp-logo">
-                                <img src="imgs/jumia.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class=" d-flex-sb">
-                                <h5>كود القسيمة : A12345</h5>
-                                <a href="#" data-toggle='modal' data-target="#shareModal">
-                                    <i class="fa fa-share"></i>
-                                    مشاركة
-                                </a>
-                            </div>
-                          </div>
-                                </div>
-                            </div>
-                        </div>
+              </div>
+          </section>
+          <!--End Contact Us Section-->
 
-                    </div>
-                   </div>
-               </div>
-
-        </section>
-        <!--End Profile Content Section-->
 
         <!--Start Footer Section-->
         <footer >
