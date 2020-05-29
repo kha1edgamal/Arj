@@ -285,6 +285,51 @@ select {
 header.logged-in li.login{
     display: none
 }
+header.logged-in  li.has-child{
+    position: relative
+}
+header.logged-in  li.has-child ul {
+    position: absolute;
+    height: 100%;
+    z-index: 9;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+header.logged-in  li.has-child:hover:after{
+    display: none
+}
+header.logged-in  li.has-child ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s
+}
+header.logged-in  li.has-child:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s
+}
+header.logged-in  li.has-child ul li {
+    display: block
+}
+header.logged-in  li.has-child ul li:hover{
+    text-decoration: underline
+}
+header.logged-in  li.has-child ul li:last-child{
+     border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+header.logged-in  li.has-child ul li{
+    padding: 20px;
+    margin-bottom: 3px;
+    background: #C5C5C5;
+    width: 293px;
+    text-align: center
+}
+header.logged-in  li.has-child ul li a{
+    font-size: 20px
+}
 header.logged-in li.has-child{
     padding-left: 30px;
     position: relative
@@ -603,7 +648,7 @@ header .logo img{
     margin: 80px 0
 }
 
-.our-stores .stores .col > span{
+.our-stores .stores .col > a{
     width: 220px;
     height: 220px;
     line-height: 220px;
@@ -624,11 +669,11 @@ header .logo img{
     transform: rotate(0);
     transition: all .3s
 }
-.our-stores .stores span:hover  img{
+.our-stores .stores a:hover  img{
     transform: rotate(360deg);
     transition: all .3s
 }
-.our-stores .stores span:hover{
+.our-stores .stores a:hover{
     box-shadow: 0px 1px 20px #00000029;
     transition: all .3s
 }

@@ -1,4 +1,19 @@
 $(document).ready(function () {
+    /*Sticky Header Scroll*/
+    window.onscroll = function () {
+        myFunction()
+    };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
     //Copy Text On Click
     $('#x').click(function(){
         $("#editableText").select();
@@ -74,20 +89,6 @@ $("#imageUpload").change(function() {
         }
     }
 })
-    $(this).scrollTop(0);
-        /*Smooth Scroll*/
-    window.onscroll = function () {
-        myFunction()
-    };
 
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
 
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
 });
