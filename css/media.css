@@ -174,7 +174,7 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     .screen-nav{
         display: none !important
     }
-    header .mobile-nav ul{
+    header .mobile-nav > ul{
         position: absolute;
     width: 100%;
     background: #fff;
@@ -194,6 +194,21 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
         color: #9D2125
     }
     header .mobile-nav ul li a{
+        color: #9d2125
+    }
+    header.logged-in .mobile-nav li.has-child:hover ul{
+        top: 65px
+    }
+    header.logged-in .mobile-nav li.has-child{
+        background: #fff
+    }
+    header.logged-in .mobile-nav li.has-child:before{
+        font-size: 21px;
+    left: 43%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    }
+    header.logged-in .mobile-nav li.has-child > a{
         color: #9d2125
     }
     header .mobile-nav ul li:last-child{
@@ -242,6 +257,14 @@ font-size: 30px}
     }
     .single-store-pg .store-body{
         margin-top: 100px
+    }
+    .stores-content .box p{
+        padding: 0 5px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .stores-content .box .box-footer{
+        font-size: 18px;
     }
 }/*991*/
 @media(max-width:768px){
@@ -313,6 +336,12 @@ font-size: 30px}
 
 } /*/768*/
 @media(max-width:575px){
+    header.logged-in .mobile-nav li.has-child ul li a{
+        font-size: 15px;
+    }
+    header.logged-in .mobile-nav li.has-child ul li{
+        padding: 10px;
+    }
     .about-us-pg .our-msg .envelope-bg p{
         position: static;
         transform: unset;
