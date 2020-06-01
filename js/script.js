@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     /*Sticky Header Scroll*/
     window.onscroll = function () {
         myFunction()
