@@ -2259,6 +2259,9 @@ border-radius: 36px;
 
 
 }
+ .categories-pg .nav-tabs .nav-link:hover{
+    border-radius: 30px
+}
 .categories-pg input[type=range] {
   width: 100%;
   margin: 11.8px 0;
