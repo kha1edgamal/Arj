@@ -12,6 +12,12 @@
         padding-left: 70px;
         padding-right: 70px
     }
+    footer .top-footer .info{
+    }
+    footer .top-footer .qr,
+    footer .socials{
+        text-align: right !important
+    }
 }/*/1300*/
 @media(max-width:1200px){
     header .m-nav ul li:not(:last-child){
@@ -22,11 +28,14 @@
     footer{
             padding-top: 70px;
     background-color: #292830;
-        margin-top: 0
+        margin-top: 50px
 
     }
 }
 @media(max-width:991px){
+    footer .bottom-footer .d-flex-sb{
+        display: block;
+    }
     .about-us-pg .our-values .circle{
         text-align: center;
         margin: auto auto 30px auto
@@ -91,7 +100,7 @@
         height: 200px;
         margin-bottom: 50px;
     }
-    .our-stores .stores{
+    .best-stores .stores{
         text-align: center;
     }
     header.logged-in .mobile-nav .my-acc{
@@ -119,7 +128,7 @@
     footer .bottom-footer .socials{
         text-align: center
     }
-    .our-stores .stores .col > span{
+    .best-stores .stores .col > span{
         margin-bottom: 40px
     }
  @keyframes pulse {
@@ -139,7 +148,7 @@
         width: 50px;
     height: 50px;
     line-height: 50px;
-    background: #9D2125;
+    background: #88025D;
     text-align: center;
     color: #fff;
     border-radius: 50%;
@@ -191,10 +200,10 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     header .mobile-nav ul li{
         padding: 10px 0;
         border-bottom: 1px solid #ccc;
-        color: #9D2125
+        color: #88025D
     }
     header .mobile-nav ul li a{
-        color: #9d2125
+        color: #88025D
     }
     header.logged-in .mobile-nav li.has-child:hover ul{
         top: 65px
@@ -209,10 +218,10 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: translate(-50%,-50%);
     }
     header.logged-in .mobile-nav li.has-child > a{
-        color: #9d2125
+        color: #88025D
     }
     header .mobile-nav ul li:last-child{
-        background: #9d2125;
+        background: #88025D;
     }
     header .mobile-nav ul li:last-child a{
         color: #fff
@@ -291,8 +300,8 @@ font-size: 30px}
     .cart-pg .cart-sec .cart-header .title{
         margin-bottom: 30px
     }
-    .profile-pg .profile-content .default-voucher,
-    .cart-pg .default-voucher{
+    .profile-pg .profile-content .item,
+    .cart-pg .item{
         width: 100%
     }
     .single-store-pg .store-body .m-btn{
@@ -336,6 +345,15 @@ font-size: 30px}
 
 } /*/768*/
 @media(max-width:575px){
+    footer .links li:not(:last-child){
+        margin-left: 10px;
+    }
+    footer .bottom-footer .cpy{
+        font-size: 10px
+    }
+    footer .links li a{
+        font-size: 12px
+    }
     footer .top-footer .news .inp input{
         padding: 0 20px;
     }
@@ -348,20 +366,20 @@ font-size: 30px}
     .vouchers .owl-carousel button.owl-prev, .vouchers .owl-carousel button.owl-next{
         font-size: 30px
     }
-    .default-voucher .add-to-cart{
+    .item .add-to-cart{
         padding: 20px 0;
     }
     .cart-pg .count-number{
         padding: 20px 0;
     }
-    .default-voucher .price h4,
-    .default-voucher .add-to-cart a{
+    .item .price h4,
+    .item .add-to-cart a{
         font-size: 20px
     }
-    .default-voucher .price{
+    .item .price{
         padding: 15px 0
     }
-    .default-voucher .comp-logo{
+    .item .comp-logo{
         width: 120px;
         height: 120px;
     }
@@ -437,7 +455,7 @@ font-size: 30px}
         transform: unset;
     }
     footer .top-footer .logo{
-        margin-bottom: unset;
+        margin: 80px 0
     }
     .our-vision .light{
         display: none
@@ -488,13 +506,13 @@ font-size: 30px}
         margin-left: 0;
         display: block
     }
-    .profile-pg .profile-content .default-voucher .d-flex-sb{
+    .profile-pg .profile-content .item .d-flex-sb{
         padding: 20px;
     }
-    .profile-pg .profile-content .default-voucher .d-flex-sb h5{
+    .profile-pg .profile-content .item .d-flex-sb h5{
         font-size: 13px
     }
-    .profile-pg .profile-content .default-voucher .d-flex-sb a{
+    .profile-pg .profile-content .item .d-flex-sb a{
         font-size: 10px
     }
     .profile-pg .cards .single-card{

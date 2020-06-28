@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+      $('#btnSubmit').on('click', function(e){
+      $('#createAccount').modal('show');
+      e.preventDefault();
+          console.log('Clicked22')
+  });
+
+    $('.genderSelect').select2({
+        placeholder: "اختر الجنس",
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+    $('.catSelect').select2({
+        width: '200px',
+        minimumResultsForSearch: -1
+    });
+
     /*Sticky Header Scroll*/
     window.onscroll = function () {
         myFunction()
@@ -69,11 +85,11 @@ $("#imageUpload").change(function() {
         e.preventDefault();
     })
     $('.voucher-carousel').owlCarousel({
-        autoplay:true,
+        autoplay:false,
         loop: true,
     rtl:true,
     loop:true,
-    margin:15,
+    margin:0,
     nav:true,
     navText : ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"],
     dots:false,
@@ -84,7 +100,10 @@ $("#imageUpload").change(function() {
         600:{
             items:2
         },
-        1000:{
+        1200:{
+            items:2
+        },
+        1400:{
             items:3
         }
     }

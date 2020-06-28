@@ -7,12 +7,13 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tubaa-Home</title>
+    <title>Arj</title>
     <!--Favicon-->
-    <link rel="shortcut icon" href="imgs/logo.png">
+    <link rel="shortcut icon" href="imgs/arj/arj-logo.png">
     <!--Bootstrap Minified-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
 
     <!--FontAwesome Styles-->
     <link rel="stylesheet" href="css/all.css">
@@ -57,11 +58,11 @@
                     </div>
                     <div class="modal-body">
                         <div class="logo text-center">
-                            <img src="imgs/logo.png" alt="">
+                            <img src="imgs/arj/arj-logo.png" alt="">
                         </div>
                         <h4 class="text-center">تسجيل الدخول</h4>
                         <form action="">
-                            <input type="text" placeholder="البريد الالكتروني او رقم الجوال">
+                            <input type="text" placeholder=" رقم الجوال">
                             <input type="password" placeholder="كلمة المرور">
                             <div class="forget-pass">
                                 <a href="forget-pass.html">نسيت كلمة المرور؟</a>
@@ -69,10 +70,12 @@
                             <a href="#" id="logIn" class="m-btn w-100">
                                 تسجيل الدخول
                             </a>
+<!--
                             <div class="or"><bdi>-أو-</bdi></div>
                             <a href="" class="google-sign">تسجيل دخول عبر جوجل
                                 <img src="imgs/google-color.png" alt="">
                             </a>
+-->
                             <div class="dont-have-acc">
                                 <bdi>ليس لديك حساب؟</bdi>
                                 <span><a href="register.html">تسجيل</a></span>
@@ -85,29 +88,33 @@
         </div>
         <!--/Login Modal-->
 
+
+
        </div>
 
         <!--Start Header Section-->
-        <header class="overlay-header logged-in" id="myHeader">
+        <header class="overlay-header" id="myHeader">
             <div class="custom-container">
                 <div class="d-flex-sb">
                     <div class="logo">
-                        <img src="imgs/logo.png" alt="">
+                        <img src="imgs/arj/arj-logo.png" alt="">
                     </div>
                     <div class="m-nav m-auto-0 screen-nav">
                         <ul>
                             <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="about-us.html">عن طوبى</a></li>
-                            <li><a href="our-store.html">متاجرنا</a></li>
+                            <li><a href="categories.html">الأقسام</a></li>
+                            <li><a href="about-us.html">عن المتجر</a></li>
                             <li><a href="contact-us.html">تواصل معنا</a></li>
 
                             <li class="my-acc has-child logged-only d-none">
                                 <a href="#">حسابي</a>
+<!--
                                  <ul>
                                 <li><a href="#">الملف الشخصي</a></li>
                                 <li><a href="#">طلباتي</a></li>
                                 <li><a href="#">تسجيل خروج</a></li>
                             </ul>
+-->
                             </li>
                             <li class="cart logged-only d-none">
                                 <a href="cart.html">
@@ -132,17 +139,19 @@
                         </div>
                         <ul>
                             <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="about-us.html">عن طوبى</a></li>
-                            <li><a href="our-store.html">متاجرنا</a></li>
+                            <li><a href="about-us.html">عن متجرنا</a></li>
+                            <li><a href="categories.html">الاقسام</a></li>
                             <li><a href="contact-us.html">تواصل معنا</a></li>
 
                             <li class="my-acc has-child logged-only d-none">
                                 <a href="#">حسابي</a>
+<!--
                                  <ul>
                                 <li><a href="#">الملف الشخصي</a></li>
                                 <li><a href="#">طلباتي</a></li>
                                 <li><a href="#">تسجيل خروج</a></li>
                             </ul>
+-->
                             </li>
                         </ul>
                     </div>
@@ -153,7 +162,7 @@
 
         <!--Start Hero Section-->
         <section class="hero">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel h-100 slide" data-ride="carousel" data-interval='false'>
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -165,21 +174,46 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="text">
-                                        <h1>لحظة سعادة تهديها لمن تحب
-                                            <span><img src="imgs/heart.png" alt=""></span>
+                                        <h1> تسوق ارقى العطور بأفضل الأسعار !
                                         </h1>
                                         <p>
-                                            تواجهنا حيرة عنما نحاول اختيار هدية في مختلف المناسبات، وكثير من الأشخاص يتلقون هدايا مكررة او لا يحبونها بشكل خاص لذا فإن مصيرها الإهمال او البيع بأقل من قيمتها، وإحدى الطرق لمنع هذه الخسارة هو تقديم مبلغ نقدي كهدية ولكن في كثير من الأحيان لا يعد ذلك أمرا مناسبا لذا أسلوب منصة طوبى يعد بديلا فعالا
-                                        </p>
+                                            هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل</p>
                                     </div>
+                                    <form>
+                                        <div class="search-input">
+                                            <div class="search-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <input type="text" placeholder="ابحث عن منتج">
+                                            <input type="submit" value="بحث">
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="left-img">
-                                        <img src="imgs/hero-gold.png" alt="">
-                                        <img src="imgs/confetti.gif" alt="" class="gif">
-                                    </div>
 
-                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="custom-container">
+                            <div class="row">
+                               <div class="col-lg-6">
+                                                                   <div class="text">
+                                        <h1> تسوق ارقى العطور بأفضل الأسعار !
+                                        </h1>
+                                        <p>
+                                            هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل</p>
+                                    </div>
+                                    <form>
+                                        <div class="search-input">
+                                            <div class="search-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <input type="text" placeholder="ابحث عن منتج">
+                                            <input type="submit" value="بحث">
+                                        </div>
+                                    </form>
+                               </div>
+
                             </div>
                         </div>
                     </div>
@@ -188,43 +222,20 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="text">
-                                        <h1>لحظة سعادة تهديها لمن تحب
-                                            <span><img src="imgs/heart.png" alt=""></span>
+                                        <h1> تسوق ارقى العطور بأفضل الأسعار !
                                         </h1>
                                         <p>
-                                            تواجهنا حيرة عنما نحاول اختيار هدية في مختلف المناسبات، وكثير من الأشخاص يتلقون هدايا مكررة او لا يحبونها بشكل خاص لذا فإن مصيرها الإهمال او البيع بأقل من قيمتها، وإحدى الطرق لمنع هذه الخسارة هو تقديم مبلغ نقدي كهدية ولكن في كثير من الأحيان لا يعد ذلك أمرا مناسبا لذا أسلوب منصة طوبى يعد بديلا فعالا
-                                        </p>
+                                            هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل هذا النص هو مثال لنص يمكن أن يستبدل</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="left-img">
-                                        <img src="imgs/hero-gold.png" alt="">
-                                        <img src="imgs/confetti.gif" alt="" class="gif">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="custom-container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="text">
-                                        <h1>لحظة سعادة تهديها لمن تحب
-                                            <span><img src="imgs/heart.png" alt=""></span>
-                                        </h1>
-                                        <p>
-                                            تواجهنا حيرة عنما نحاول اختيار هدية في مختلف المناسبات، وكثير من الأشخاص يتلقون هدايا مكررة او لا يحبونها بشكل خاص لذا فإن مصيرها الإهمال او البيع بأقل من قيمتها، وإحدى الطرق لمنع هذه الخسارة هو تقديم مبلغ نقدي كهدية ولكن في كثير من الأحيان لا يعد ذلك أمرا مناسبا لذا أسلوب منصة طوبى يعد بديلا فعالا
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="left-img">
-                                        <img src="imgs/hero-gold.png" alt="">
-                                        <img src="imgs/confetti.gif" alt="" class="gif">
-                                    </div>
-
+                                    <form>
+                                        <div class="search-input">
+                                            <div class="search-icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <input type="text" placeholder="ابحث عن منتج">
+                                            <input type="submit" value="بحث">
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -235,31 +246,376 @@
         </section>
         <!--End Hero Section-->
 
-        <!--Start Our Stores Section-->
-        <section class="our-stores s-padding">
+
+        <!--Start Categories Section-->
+            <section class="  categories s-padding">
+                <div class="custom-container">
+                    <div class="section-title">
+                        <h2>الأقسام</h2>
+                    </div>
+                    <div class="col-12">
+                        <div class="slider">
+                    <div class="owl-carousel  voucher-carousel">
+                        <div class="item item">
+                           <div class="image">
+                               <img src="imgs/arj/cat-1.png" alt="">
+                           </div>
+                           <h4>العود والبخور</h4>
+                           <ul class="sub-list">
+                               <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                              <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                                  <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="item item">
+                           <div class="image">
+                               <img src="imgs/arj/cat-2.png" alt="">
+                           </div>
+                           <h4>العطور الفرنسية</h4>
+                           <ul class="sub-list">
+                               <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                              <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                                  <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="item item">
+                           <div class="image">
+                               <img src="imgs/arj/cat-3.png" alt="">
+                           </div>
+                           <h4>عطور للجسم</h4>
+                           <ul class="sub-list">
+                               <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                              <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                                  <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="item item">
+                            <div class="image">
+                               <img src="imgs/arj/cat-1.png" alt="">
+                           </div>
+                           <h4>العود والبخور</h4>
+                           <ul class="sub-list">
+                               <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                              <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                                  <li>
+                                   <a href="#">قسم فرعي</a>
+                                   <i class="fas fa-chevron-left"></i>
+                               </li>
+                           </ul>
+                        </div>
+
+                    </div>
+                </div>
+                    </div>
+
+                </div>
+            </section>
+        <!--End Categories Section-->
+
+        <!--Start Most Orderd Section-->
+        <section class="most-orderd s-padding">
             <div class="custom-container">
                 <div class="section-title">
-                    <h2>متاجرنا</h2>
+                    <h2>الأكثر طلب</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+                                    <h3>1000</h3>
+                                </div>
+                                <div class="price">
+                                500 ريال
+                                <span><bdi>-50%</bdi></span>
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+                                    <h3>1000</h3>
+                                </div>
+                                <div class="price">
+                                500 ريال
+                                <span><bdi>-50%</bdi></span>
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+                                    <h3>1000</h3>
+                                </div>
+                                <div class="price">
+                                500 ريال
+                                <span><bdi>-50%</bdi></span>
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+                                    <h3>1000</h3>
+                                </div>
+                                <div class="price">
+                                500 ريال
+                                <span><bdi>-50%</bdi></span>
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-more d-block w-100 text-center">
+                    <a class="m-btn m-auto " href="">المزيد</a>
+                </div>
+            </div>
+        </section>
+        <!--End Most Orderd Section-->
+
+        <!--Start Our New Section-->
+        <section class="our-new s-padding">
+            <div class="custom-container">
+                <div class="section-title">
+                    <h2>جديدنا</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/our-new.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/our-new.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/our-new.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/our-new.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-more d-block w-100 text-center">
+                    <a class="m-btn m-auto " href="">المزيد</a>
+                </div>
+            </div>
+        </section>
+        <!--End Our New Section-->
+
+        <!--Start Our Stores Section-->
+        <section class="best-stores s-padding">
+            <div class="custom-container">
+                <div class="section-title">
+                    <h2>افضل الماركات</h2>
                 </div>
                 <div class="stores ">
                     <div class="row">
                         <div class="col">
                            <a href="#">
-                               <span><img src="imgs/jumia.png" alt=""></span>
+                               <span><img src="imgs/arj/brand-1.png" alt=""></span>
                            </a>
 
                         </div>
                         <div class="col">
-                            <a href="#"><span><img src="imgs/souq.png" alt=""></span></a>
+                            <a href="#"><span><img src="imgs/arj/brand-2.png" alt=""></span></a>
                         </div>
                         <div class="col">
-                            <a href="#"><span><img src="imgs/carrefour.png" alt=""></span></a>
+                            <a href="#"><span><img src="imgs/arj/brand-3.png" alt=""></span></a>
                         </div>
                         <div class="col">
-                            <a href="#"><span><img src="imgs/jarir.png" alt=""></span></a>
+                            <a href="#"><span><img src="imgs/arj/brand-4.png" alt=""></span></a>
                         </div>
                         <div class="col">
-                            <a href="#"><span><img src="imgs/noon.png" alt=""></span></a>
+                            <a href="#"><span><img src="imgs/arj/brand-5.png" alt=""></span></a>
                         </div>
                     </div>
                 </div>
@@ -269,89 +625,253 @@
         </section>
         <!--End Our Stores Section-->
 
-        <!--Start Vouchers Section-->
-        <section class="vouchers s-padding">
+        <!--Start Most Famous-->
+        <section class="most-famous s-padding">
             <div class="custom-container">
-            <div class="section-title">
-                <h2>قسائم شراء متنوعة</h2>
-            </div>
-                <div class="slider">
-                    <div class="owl-carousel owl-theme voucher-carousel">
-                        <div class="item default-voucher">
-                            <div class="comp-logo">
-                                <img src="imgs/jumia.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class="add-to-cart">
+                <div class="section-title">
+                    <h2>الأكثر شهرة</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-famous.png" alt="">
                                 <a href="#">
-                                    <i class="fas fa-cart-plus"></i>
-                                    اضف الى العربة
+                                    <i class="far fa-heart"></i>
                                 </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="item default-voucher">
-                            <div class="comp-logo">
-                                <img src="imgs/carrefour.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class="add-to-cart">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-famous.png" alt="">
                                 <a href="#">
-                                    <i class="fas fa-cart-plus"></i>
-                                    اضف الى العربة
+                                    <i class="far fa-heart"></i>
                                 </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="item default-voucher">
-                            <div class="comp-logo">
-                                <img src="imgs/jarir.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class="add-to-cart">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-famous.png" alt="">
                                 <a href="#">
-                                    <i class="fas fa-cart-plus"></i>
-                                    اضف الى العربة
+                                    <i class="far fa-heart"></i>
                                 </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="item default-voucher">
-                            <div class="comp-logo">
-                                <img src="imgs/noon.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class="add-to-cart">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-famous.png" alt="">
                                 <a href="#">
-                                    <i class="fas fa-cart-plus"></i>
-                                    اضف الى العربة
+                                    <i class="far fa-heart"></i>
                                 </a>
                             </div>
-                        </div>
-                        <div class="item default-voucher">
-                            <div class="comp-logo">
-                                <img src="imgs/souq.png" alt="">
-                            </div>
-                            <div class="price">
-                                <h4>1000 ريال</h4>
-                            </div>
-                            <div class="add-to-cart">
-                                <a href="#">
-                                    <i class="fas fa-cart-plus"></i>
-                                    اضف الى العربة
-                                </a>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="show-more d-block w-100 text-center">
+                    <a class="m-btn m-auto " href="">المزيد</a>
+                </div>
             </div>
         </section>
-        <!--End Vouchers Section-->
+        <!--End Most Famous-->
+
+        <!--Suggested For You-->
+        <section class="suggested">
+             <div class="custom-container">
+                <div class="section-title">
+                    <h2>مقترحة لك</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="default-card">
+                            <div class="top-img">
+                                <img src="imgs/arj/most-orderd.png" alt="">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="type">
+                                    <h5>Chanel</h5>
+                                    <h4>عطر شانيل N5</h4>
+
+                                </div>
+                                <div class="price">
+                                500 ريال
+
+                                </div>
+                                <div class="addCart w-100">
+                                    <a href="#">
+                                        <span><i class="fas fa-cart-plus"></i></span>
+                                        اضف الى العربة
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-more d-block w-100 text-center">
+                    <a class="m-btn m-auto " href="">المزيد</a>
+                </div>
+            </div>
+        </section>
+        <!--End Suggested For You-->
+
+
 
         <!--Start Footer Section-->
         <footer>
@@ -359,61 +879,39 @@
             <div class="top-footer">
                 <div class="custom-container">
                     <div class="row">
-                        <div class="col-xl-4 col-sm-6">
-                            <div class="logo">
-                                <img src="imgs/footer-logo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 qr-cont">
-                            <div class="qr">
-                                <img src="imgs/qr.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-12 m-auto">
+
+
+                        <div class="col-xl-4 col-sm-6 m-auto">
                             <div class="info">
                                 <ul>
                                     <li>
-                                        <span><i class="fas fa-phone"></i></span>
-                                        <a href="#">123456789</a>
+                                       <h5>
+                                           <span><i class="fas fa-phone"></i></span>
+                                           رقم الهاتف :
+                                       </h5>
+                                       <a href="#">0123456789</a>
                                     </li>
                                     <li>
-                                        <span><i class="fas fa-envelope"></i></span>
-                                        <a href="#">info@tubaa.net</a>
+                                       <h5>
+                                           <span><i class="fas fa-envelope"></i></span>
+                                           البريد الالكتروني :
+                                       </h5>
+                                        <a href="#">info@arj.net</a>
                                     </li>
                                 </ul>
-                                <div class="news">
-                                    <form action="#">
-                                        <label for="email">اعرف جديدنا</label>
-                                        <div class="inp">
-                                            <input type="email" id="email" placeholder="ادخل بريدك الالكتروني">
-                                            <button><img src="imgs/send.png" alt=""></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-            <hr>
-            <div class="bottom-footer">
-                <div class="custom-container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <ul class="links">
-                                <li><a href="index.html">الرئيسية</a></li>
-                                <li><a href="about-us.html">عن طوبى</a></li>
-                                <li><a href="our-store.html">متاجرنا</a></li>
-                                <li><a href="contact-us.html">تواصل معنا</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="cpy">
-                                &copy; جميع الحقوق محفوظه 2020
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                         <div class="col-xl-4 col-sm-6">
+                            <div class="logo">
+                                <img src="imgs/arj/arj-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 ">
+
+                            <div class="qr text-right">
+                                <img src="imgs/qr.png" alt="">
+                            </div>
                             <ul class="socials">
                                 <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -423,6 +921,28 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="bottom-footer">
+                <div class="custom-container">
+
+                       <div class="d-flex-sb">
+                           <ul class="links">
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li><a href="about-us.html">عن متجرنا</a></li>
+                                <li><a href="categories.html">الاقسام</a></li>
+                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                                <li><a href="privacy-policy.html">سياسة الاستخدام</a></li>
+
+                            </ul>
+                            <div class="cpy">
+                                &copy; جميع الحقوق محفوظه 2020
+                            </div>
+                       </div>
+
+
                 </div>
 
             </div>
@@ -442,7 +962,7 @@
     <script src="js/wow.min.js"></script>
     <!--Bootstrap Minified JS-->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/select2.min.js"></script>
 
     <!--ScrollBar-->
     <script src="js/jquery.smoothscroll.min.js"></script>

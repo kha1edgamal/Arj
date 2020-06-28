@@ -9,10 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
     <!--Favicon-->
-    <link rel="shortcut icon" href="imgs/logo.png">
+    <link rel="shortcut icon" href="imgs/arj/arj-logo.png">
     <!--Bootstrap Minified-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css">
+
+    <link rel="stylesheet" href="css/select2.min.css">
+
 
     <!--FontAwesome Styles-->
     <link rel="stylesheet" href="css/all.css">
@@ -44,7 +48,8 @@
     <!--End Preloader Section-->
     <div class="wrapper register-pg">
        <div class="modals-cont w-100 h-100">
-           <!--Login Modal-->
+            <!--Login Modal-->
+
         <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -56,11 +61,11 @@
                     </div>
                     <div class="modal-body">
                         <div class="logo text-center">
-                            <img src="imgs/logo.png" alt="">
+                            <img src="imgs/arj/arj-logo.png" alt="">
                         </div>
                         <h4 class="text-center">تسجيل الدخول</h4>
                         <form action="">
-                            <input type="text" placeholder="البريد الالكتروني او رقم الجوال">
+                            <input type="text" placeholder=" رقم الجوال">
                             <input type="password" placeholder="كلمة المرور">
                             <div class="forget-pass">
                                 <a href="forget-pass.html">نسيت كلمة المرور؟</a>
@@ -68,10 +73,12 @@
                             <a href="#" id="logIn" class="m-btn w-100">
                                 تسجيل الدخول
                             </a>
+<!--
                             <div class="or"><bdi>-أو-</bdi></div>
                             <a href="" class="google-sign">تسجيل دخول عبر جوجل
                                 <img src="imgs/google-color.png" alt="">
                             </a>
+-->
                             <div class="dont-have-acc">
                                 <bdi>ليس لديك حساب؟</bdi>
                                 <span><a href="register.html">تسجيل</a></span>
@@ -83,27 +90,50 @@
             </div>
         </div>
         <!--/Login Modal-->
-       </div>
 
+        <div class="modal fade mobileCodeModal " id="createAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="text-center">لتفعيل حسابك ، قم بإدخال كود التفعيل المرسل لك على جوالك</h4>
+                        <form >
+                            <input type="number" placeholder="كود التفعيل">
+                            <input type="submit" value="تأكيد" class="m-btn m-auto d-block" id="submitSuccess"  data-dismiss="modal">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+       </div>
 
         <!--Start Header Section-->
         <header class="" id="myHeader">
             <div class="custom-container">
                 <div class="d-flex-sb">
                     <div class="logo">
-                        <img src="imgs/logo.png" alt="">
+                        <img src="imgs/arj/arj-logo.png" alt="">
                     </div>
                     <div class="m-nav m-auto-0 screen-nav">
                         <ul>
                             <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="about-us.html">عن طوبى</a></li>
-                            <li><a href="our-store.html">متاجرنا</a></li>
+                            <li><a href="categories.html">الأقسام</a></li>
+                            <li><a href="about-us.html">عن المتجر</a></li>
                             <li><a href="contact-us.html">تواصل معنا</a></li>
 
                             <li class="my-acc has-child logged-only d-none">
                                 <a href="#">حسابي</a>
-                                <!--
-                            <ul>
+<!--
+                                 <ul>
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">طلباتي</a></li>
                                 <li><a href="#">تسجيل خروج</a></li>
                             </ul>
 -->
@@ -131,11 +161,20 @@
                         </div>
                         <ul>
                             <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="about-us.html">عن طوبى</a></li>
-                            <li><a href="our-store.html">متاجرنا</a></li>
+                            <li><a href="about-us.html">عن متجرنا</a></li>
+                            <li><a href="categories.html">الاقسام</a></li>
                             <li><a href="contact-us.html">تواصل معنا</a></li>
-                            <li class="my-acc logged-only d-none"><a href="#">حسابي</a></li>
-                            <li class="login-btn"><a class="login" href="#" data-toggle="modal" data-target="#loginModal">تسجيل الدخول</a></li>
+
+                            <li class="my-acc has-child logged-only d-none">
+                                <a href="#">حسابي</a>
+<!--
+                                 <ul>
+                                <li><a href="#">الملف الشخصي</a></li>
+                                <li><a href="#">طلباتي</a></li>
+                                <li><a href="#">تسجيل خروج</a></li>
+                            </ul>
+-->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -149,26 +188,30 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="register-body">
-                            <div class="section-title">
-                                <h2>التسجيل في طوبى</h2>
-                            </div>
-                            <form action="">
+                            <h3>انشاء حساب جديد</h3>
+                            <form>
                                 <input type="text" placeholder="الاسم">
                                 <input type="email" placeholder="البريد الالكتروني">
                                 <input type="number" placeholder="رقم الجوال">
-                                <input type="password" placeholder="كلمة المراور">
+                                <select class="genderSelect js-example-placeholder-single " name="gender">
+                                 <option value=""></option>
+                                  <option value="M">ذكر</option>
+                                  <option value="F">انثى</option>
+                                </select>
+                                <input type="text" placeholder="المدينة">
+                                <input type="password" placeholder="كلمة المرور">
                                 <input type="password" placeholder="تأكيد كلمة المرور">
-                                <button class="m-btn w-100">انشاء حساب</button>
-                                 <div class="or"><bdi>-أو-</bdi></div>
-                                 <a href="" class="google-sign">تسجيل دخول عبر جوجل
-                                     <img src="imgs/google-color.png" alt="">
-                                 </a>
+
+
+                               <button id="btnSubmit" class="m-btn w-100" >انشاء حساب</button>
+
                             </form>
+
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="background-sec">
-                            <img src="imgs/logo.png" alt="">
+                    <div class="col-lg-6  m-auto">
+                        <div class="background-sec text-center">
+                            <img src="imgs/arj/arj-logo.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -178,66 +221,45 @@
 
 
         <!--Start Footer Section-->
-        <footer >
+<!--
+        <footer>
 
             <div class="top-footer">
                 <div class="custom-container">
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div class="logo">
-                                <img src="imgs/footer-logo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 qr-cont">
-                            <div class="qr">
-                                <img src="imgs/qr.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 m-auto">
+
+
+                        <div class="col-xl-4 col-sm-6 m-auto">
                             <div class="info">
                                 <ul>
                                     <li>
-                                        <span><i class="fas fa-phone"></i></span>
-                                        <a href="#">123456789</a>
+                                       <h5>
+                                           <span><i class="fas fa-phone"></i></span>
+                                           رقم الهاتف :
+                                       </h5>
+                                       <a href="#">0123456789</a>
                                     </li>
                                     <li>
-                                        <span><i class="fas fa-envelope"></i></span>
-                                        <a href="#">info@tubaa.net</a>
+                                       <h5>
+                                           <span><i class="fas fa-envelope"></i></span>
+                                           البريد الالكتروني :
+                                       </h5>
+                                        <a href="#">info@arj.net</a>
                                     </li>
                                 </ul>
-                                <div class="news">
-                                    <form action="#">
-                                        <label for="email">اعرف جديدنا</label>
-                                        <div class="inp">
-                                            <input type="email" id="email" placeholder="ادخل بريدك الالكتروني">
-                                            <button><img src="imgs/send.png" alt=""></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-            <hr>
-            <div class="bottom-footer">
-                <div class="custom-container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <ul class="links">
-                                <li><a href="index.html">الرئيسية</a></li>
-                                <li><a href="about-us.html">عن طوبى</a></li>
-                                <li><a href="our-store.html">متاجرنا</a></li>
-                                <li><a href="contact-us.html">تواصل معنا</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="cpy">
-                                &copy; جميع الحقوق محفوظه 2020
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                         <div class="col-xl-4 col-sm-6">
+                            <div class="logo">
+                                <img src="imgs/arj/arj-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6 ">
+
+                            <div class="qr text-right">
+                                <img src="imgs/qr.png" alt="">
+                            </div>
                             <ul class="socials">
                                 <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
                                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -250,9 +272,32 @@
                 </div>
 
             </div>
+            <hr>
+            <div class="bottom-footer">
+                <div class="custom-container">
+
+                       <div class="d-flex-sb">
+                           <ul class="links">
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li><a href="about-us.html">عن متجرنا</a></li>
+                                <li><a href="our-store.html">الاقسام</a></li>
+                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                                <li><a href="privacy-policy.html">سياسة الاستخدام</a></li>
+
+                            </ul>
+                            <div class="cpy">
+                                &copy; جميع الحقوق محفوظه 2020
+                            </div>
+                       </div>
+
+
+                </div>
+
+            </div>
 
 
         </footer>
+-->
         <!--End Footer Section-->
 
 
@@ -266,6 +311,8 @@
     <script src="js/wow.min.js"></script>
     <!--Bootstrap Minified JS-->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js"></script>
 
 
     <!--ScrollBar-->
@@ -273,6 +320,11 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <!--Main Script-->
     <script src="js/script.js"></script>
+    <script>
+    document.getElementById('submitSuccess').onclick = function(){
+	swal("تم تفعيل حسابك بنجاح", "", "success");
+};
+    </script>
 
 
 
